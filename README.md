@@ -93,7 +93,7 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_2_mars_weath
      - Find the average daily atmospheric pressure of all the months.
      - Plot the results as a bar chart.
      
-     ![Mars min/max psi](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Average%20Temperature%20by%20Month.png)
+     ![Mars min/max psi](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Average%20Pressure%20by%20Month.png)
      
    - About how many terrestrial (Earth) days exist in a Martian year? To answer this question:
      - Consider how many days elapse on Earth in the time that Mars circles the Sun once.
@@ -102,6 +102,7 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_2_mars_weath
      ![Mars daily min temp](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Minimum%20Temperature%20per%20Martian%20Day.png)
 
 6. Export the DataFrame to a CSV file.
+
    ![csv file](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/verify%20csv%20file%20write.png)
 ### References
 
