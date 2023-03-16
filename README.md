@@ -6,6 +6,8 @@ Module 11 DUE 16 Mar 2023
 
 A full web-scraping and data analysis project utilizing articles from Mars weather and news. This project will identify HTML elements on a page, identify their `id` and `class` attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. We scrape various types of information, including HTML tables and recurring elements, like multiple news articles on a webpage. With this project, we are strengthening the same core skills that colleagues have been developing until now: collecting data, organizing and storing data, analyzing data, and then visually communicating our insights.
 
+   ![Mars Weather Image](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/MarsWeatherImage.jpg)
+
 ### What we are creating
 
 This new assignment consists of two technical products with the following deliverables:
@@ -28,8 +30,12 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_1_mars_news.
 
 1. Use automated browsing to visit the [Mars news site](https://static.bc-edx.com/data/web/mars_news/index.html). Inspect the page to identify which elements to scrape. To identify which elements to scrape, inspected the page by using Chrome DevTools.
 
-2. Create a Beautiful Soup object and use it to extract text elements from the website.
+   ![Automated Browser](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/automated%20browsing%20used%20to%20visit%20site.png)
+   
+   ![HTML copy location](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/get%20html%20to%20store%20as%20string.png)
 
+2. Create a Beautiful Soup object and use it to extract text elements from the website.
+   
 3. Extract the titles and preview text of the news articles that we scraped. Store the scraping results in Python data structures as follows:
 
    - Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: `title` and `preview`. An example is the following:
@@ -38,13 +44,16 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_1_mars_news.
      {'title': "NASA's MAVEN Observes Martian Light Show Caused by Major Solar Storm",
       'preview': "For the first time in its eight years orbiting Mars, NASA’s MAVEN mission witnessed two different types of ultraviolet aurorae simultaneously, the result of solar storms that began on Aug. 27."}
      ```
-
+   ![title and preview lines](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/verify%20first%20lines%20of%20scraped%20data.png)
+   
    - Store all the dictionaries in a Python list.
 
    - Print the list in your notebook.
 
 4. Optionally, store the scraped data in a file (to ease sharing the data with others). To do so, export the scraped data to a JSON file.
    (Note: While there will be no extra points for completing this, it is included in this project.)
+
+   ![json file data](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/json%20file%20data.png)
 
 #### Part 2: Scrape and Analyze Mars Weather Data
 
@@ -63,6 +72,10 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_2_mars_weath
    - `month`: the Martian month
    - `min_temp`: the minimum temperature, in Celsius, of a single Martian day (sol)
    - `pressure`: The atmospheric pressure at Curiosity's location
+   
+   ![header and data lists](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/verify%20header%20and%20data%20lists.png)
+   
+   ![confirm DataFrame](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/confirm%20data%20frame.png)
 
 4. Examine the data types that are currently associated with each column. Cast (or convert) the data to the appropriate `datetime`, `int`, or `float` data types, using the Pandas `astype` and `to_datetime` methods to accomplish this task.
 
@@ -73,15 +86,23 @@ Utilizing Jupyter Notebook, use the starter code folder named `part_2_mars_weath
    - What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question:
      - Find the average minimum daily temperature for all of the months.
      - Plot the results as a bar chart.
+     
+     ![Mars min/max temps](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Average%20Temperature%20by%20Month.png)
+     
    - Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question:
      - Find the average daily atmospheric pressure of all the months.
      - Plot the results as a bar chart.
+     
+     ![Mars min/max psi](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Average%20Temperature%20by%20Month.png)
+     
    - About how many terrestrial (Earth) days exist in a Martian year? To answer this question:
      - Consider how many days elapse on Earth in the time that Mars circles the Sun once.
      - Visually estimate the result by plotting the daily minimum temperature.
+          
+     ![Mars daily min temp](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/Mars%20Minimum%20Temperature%20per%20Martian%20Day.png)
 
 6. Export the DataFrame to a CSV file.
-
+   ![csv file](https://github.com/mugsiemx/data-collection-challenge/blob/main/MarsCollections/Images/verify%20csv%20file%20write.png)
 ### References
 
 [The Mars News website](https://static.bc-edx.com/data/web/mars_news/index.html) is operated by edX Boot Camps LLC for educational purposes only. The news article titles, summaries, dates, and images were scraped from [NASA's Mars News](https://mars.nasa.gov/) website in November 2022. Images are used according to the [JPL Image Use Policy](https://www.jpl.nasa.gov/jpl-image-use-policy), courtesy NASA/JPL-Caltech.
